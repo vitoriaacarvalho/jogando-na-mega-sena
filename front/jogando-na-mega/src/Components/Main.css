@@ -1,0 +1,15 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(156, 218, 137, 0.664);
+    width: 80%;
+    height: 30rem;
+    margin: auto;
+    border-radius: 25px;
+}
+h1{
+    font-family: 'EB Garamond', serif;
+    color: #415a3e;
+    font-size: 35px;
+    margin-top: 60px;
+}

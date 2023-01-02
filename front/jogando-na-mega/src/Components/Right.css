@@ -1,0 +1,84 @@
+.box{
+    background-color: rgba(255, 0, 0, 0);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.title{
+    font-family: 'Markazi Text', serif;
+    color: #000000a8;
+    font-size: 23px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+.button{
+    display: flex;
+    margin: auto; 
+    margin-top: 5px;
+    justify-content: center;
+    text-decoration: none;
+    background-color:#c7f3a9;
+    width: 40%;
+    height: 63px;
+    border-radius: 70px;
+    box-shadow: 3.5px 3px 4px 0.5px rgba(0, 0, 0, 0.048);
+}
+.button:hover{
+    background-color:#d1f3bb;
+    width: 41%;
+    height: 65px;
+    border-radius: 50px;
+}
+.bttn-p{
+    margin-top: 9%;
+    font-size: 120%;
+    text-align: center;
+    color: black;
+    font-family: 'Markazi Text', serif;
+}
+.button-2{
+    display: flex;
+    margin: auto; 
+    margin-top: -60px;
+    justify-content: center;
+    text-decoration: none;
+    background-color:#c7f3a9;
+    width: 40%;
+    height: 63px;
+    border-radius: 70px;
+    box-shadow: 3.5px 3px 4px 0.5px rgba(0, 0, 0, 0.048);
+}
+.button-2:hover{
+    background-color:#46682f;
+    width: 41%;
+    height: 65px;
+    border-radius: 50px;
+}
+.bttn-p2{
+    margin-top: 9%;
+    font-size: 120%;
+    text-align: center;
+    color: black;
+    font-family: 'Markazi Text', serif;
+}
+.numbers-container{
+    background-color: rgba(113, 172, 123, 0.705);
+    width: 50%;
+    height:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 50px 25px;
+}
+.n1,.n2,.n3,.n4,.n5,.n6{
+    background-color: #ffffff;
+    border-radius: 100px;
+    width: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 8px;
+}
