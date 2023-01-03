@@ -1,4 +1,6 @@
 import "./Right.css"
+import CircumIcon from "@klarr-agency/circum-icons-react";
+
 const Right=()=>{
     return(
         <div className="box">
@@ -10,13 +12,17 @@ const Right=()=>{
                 <p className="n4">22</p>
                 <p className="n5">45</p>
                 <p className="n6">54</p>
-            </div>
+            </div>  
+           
+
+
+            <a href="#" className="bttn-2"> 
+                <p className="bttn-2-p">Adicionar jogo</p>
+            </a>
             <a href="#" className="button">
                 <p className="bttn-p">GERAR NÚMEROS</p>
             </a>
-            <a href="#" className="button-2">
-                <p className="bttn-p2">ADICIONAR NA LISTA</p>
-            </a>
+            
         </div>
     );
 }
