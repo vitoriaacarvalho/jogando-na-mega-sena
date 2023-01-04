@@ -1,4 +1,5 @@
 import "./Left.css"
+import axios from 'axios';
 
 const Left=()=>{
     return(
