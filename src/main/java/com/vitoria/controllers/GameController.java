@@ -62,14 +62,7 @@ public class GameController {
 
 	@PostMapping("/game12")
 	public ResponseEntity<Game> shuffleNumbers(){
-		List<Integer> game=new ArrayList<>();
-		Integer[] shuffled= postingShuffledGame();
-		game.add(shuffled[0]);
-		game.add(shuffled[1]);
-		game.add(shuffled[2]);
-		game.add(shuffled[3]);
-		game.add(shuffled[4]);
-		game.add(shuffled[5]);
+		Integer[] game= postingShuffledGame();
 		Game finalGame=new Game(game,12);
 		repo.save(finalGame);
 		return ResponseEntity.ok().body(finalGame);

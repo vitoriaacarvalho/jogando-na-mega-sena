@@ -15,14 +15,7 @@ const Right=()=>{
     const gameNumbers=game.map((game, index) => {
         return(
             <>
-                 <p className="n1">{game.numbers[0]}</p>
-                    <p className="n2">{game.numbers[1]}</p>
-                    <p className="n3">{game.numbers[2]}</p>
-                    <p className="n4">{game.numbers[3]}</p>
-                    <p className="n5">{game.numbers[4]}</p>
-                    <p className="n6">{game.numbers[5]}</p> 
-        
-               
+                <p className="n1">{game}</p>
             </>
         )
         // this was me testing the console but the same thing happens in any index: console.log(game.numbers[2]);
