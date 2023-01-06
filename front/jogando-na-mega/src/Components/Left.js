@@ -5,19 +5,39 @@ const Left=()=>{
     return(
         <aside>
             <h6>Meus Jogos</h6>
-            <div game-container>
-                <ul>
-                    <li>
-                        <p className="a1">30</p>
-                        <p className="a2">30</p>
-                        <p className="a3">30</p>
-                        <p className="a4">30</p>
-                        <p className="a5">30</p>
-                        <p className="a6">30</p>
-                    </li>
-                    
-                </ul>
-
+            <div className="game-container">
+                <div className="game">
+                    <p className="a1">30</p>
+                    <p className="a2">12</p>
+                    <p className="a3">43</p>
+                    <p className="a4">38</p>
+                    <p className="a5">09</p>
+                    <p className="a6">22</p>
+                </div>
+                <div className="game">
+                    <p className="a1">30</p>
+                    <p className="a2">12</p>
+                    <p className="a3">43</p>
+                    <p className="a4">38</p>
+                    <p className="a5">09</p>
+                    <p className="a6">22</p>
+                </div>
+                <div className="game">
+                    <p className="a1">30</p>
+                    <p className="a2">12</p>
+                    <p className="a3">43</p>
+                    <p className="a4">38</p>
+                    <p className="a5">09</p>
+                    <p className="a6">22</p>
+                </div>
+                <div className="game">
+                    <p className="a1">30</p>
+                    <p className="a2">12</p>
+                    <p className="a3">43</p>
+                    <p className="a4">38</p>
+                    <p className="a5">09</p>
+                    <p className="a6">22</p>
+                </div>
             </div>
         </aside>
     );
