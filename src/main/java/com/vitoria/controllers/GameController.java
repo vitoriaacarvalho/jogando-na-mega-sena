@@ -59,27 +59,29 @@ public class GameController {
 		repo.save(updatedGame);
 		return ResponseEntity.ok().body(updatedGame);
 	}
-	
+
+	@PostMapping("/game12")
 	public ResponseEntity<Game> shuffleNumbers(){
-		Integer[] numbers= {1,2,3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55,56,57,58,59,60};
-		List<Integer> intList=Arrays.asList(numbers);
-		Collections.shuffle(intList);
-		intList.toArray(numbers);
 		List<Integer> game=new ArrayList<>();
-		
-		game.add(numbers[0]);
-		game.add(numbers[1]);
-		game.add(numbers[2]);
-		game.add(numbers[3]);
-		game.add(numbers[4]);
-		game.add(numbers[5]);
-		Game finalGame=new Game(game, 1);
-		update(1,finalGame);
+		Integer[] shuffled= postingShuffledGame();
+		game.add(shuffled[0]);
+		game.add(shuffled[1]);
+		game.add(shuffled[2]);
+		game.add(shuffled[3]);
+		game.add(shuffled[4]);
+		game.add(shuffled[5]);
+		Game finalGame=new Game(game,12);
 		repo.save(finalGame);
 		return ResponseEntity.ok().body(finalGame);
 	}
 	
-	
+	public Integer[] postingShuffledGame() {
+		Integer[] numbers= {1,2,3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55,56,57,58,59,60};
+		List<Integer> intList=Arrays.asList(numbers);
+		Collections.shuffle(intList);
+		intList.toArray(numbers);
+		return numbers;
+	}
 	
 	
 	
