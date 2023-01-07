@@ -1,7 +1,8 @@
 main{
     display: flex;
     justify-content: space-between;
-    background-color: rgba(156, 218, 137, 0.664);
+    background-color:
+    #B1D8B7;
     width: 80%;
     height: 30rem;
     margin: auto;
@@ -9,7 +10,8 @@ main{
 }
 h1{
     font-family: 'EB Garamond', serif;
-    color: #415a3e;
-    font-size: 35px;
+    color: #2F5233;
+    font-size: 36px;
     margin-top: 60px;
+    font-weight: bold;
 }

@@ -7,8 +7,8 @@
 }
 .title{
     font-family: 'Markazi Text', serif;
-    color: #000000a8;
-    font-size: 43px;
+    color: #2F5233;
+    font-size: 33px;
     margin-top: 20px;
     margin-bottom: 15px;
     justify-content: center;
@@ -20,14 +20,14 @@
     margin-top: -60px;
     justify-content: center;
     text-decoration: none;
-    background-color:#c7f3a9;
+    background-color:rgba(113, 172, 123, 0.342);
     width: 40%;
     height: 63px;
     border-radius: 70px;
     box-shadow: 3.5px 3px 4px 0.5px rgba(0, 0, 0, 0.048);
 }
 .button:hover{
-    background-color:#bfdfaada;
+    background-color: rgba(147, 199, 156, 0.473);
     width: 41%;
     height: 65px;
     border-radius: 50px;

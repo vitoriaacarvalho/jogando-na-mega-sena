@@ -28,7 +28,9 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 @CrossOrigin(origins = "*")
 public class GameController {
-
+	
+	public Integer personalizedId;
+	
 	@Autowired
 	private GameRepository repo;
 	
@@ -56,8 +58,19 @@ public class GameController {
 
 	@GetMapping("/game12")
 	public ResponseEntity<List<Integer>> shuffleNumbers(){
-		Game game= postingShuffledGame(1);
+		Game game= postingShuffledGame(personalizingId(1));
 		return ResponseEntity.ok().body(game.getNumbers());
+	}
+	
+	
+	
+	private Integer personalizingId(Integer id) {
+		id++;
+		while (repo.findById(id)!=null) {
+			id++;
+			return id;
+		}
+		return id;
 	}
 	
 	@PostMapping
