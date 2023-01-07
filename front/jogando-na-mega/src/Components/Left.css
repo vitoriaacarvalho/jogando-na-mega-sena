@@ -6,13 +6,12 @@ aside{
     justify-content: center;
 }
 
-h6{
+.my-title{
     font-family: 'Markazi Text', serif;
     color: #000000a8;
     font-size: 43px;
     margin-top: 20px;
-    margin-top: 20px;
-    margin-right: -115px;
+    margin-right: -95px;
     margin-bottom: 35px;
     justify-content: center;
     display: flex;

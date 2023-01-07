@@ -7,4 +7,5 @@ import com.vitoria.models.Game;
 @Repository
 public interface GameRepository extends JpaRepository<Game, Integer> {
 
+
 }

@@ -7,7 +7,7 @@ class Left extends Component{
     render(){
         return(
             <div className="main-div">
-                <h6>Meus Jogos</h6>
+                <h6 className="my-title">Meus Jogos</h6>
                 <div id="scroll">
                     <div className="game">
                         <p>

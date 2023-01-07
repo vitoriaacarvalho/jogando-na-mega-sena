@@ -1,8 +1,10 @@
 package com.vitoria.models;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,7 +17,8 @@ public class Game implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Column(name="game_numbers")
-	private Integer[] numbers;
+	@ElementCollection(targetClass=Integer.class)
+	private List<Integer> numbers;
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -25,16 +28,16 @@ public class Game implements Serializable {
 	public Game() {
 	}
 	
-	public Game(Integer[] numbers, Integer gameId) {
-		this.numbers = numbers;
+	public Game(List<Integer> finalNumbers, Integer gameId) {
+		this.numbers = finalNumbers;
 		this.gameId = gameId;
 	}
 	
-	public Integer[] getNumbers() {
+	public List<Integer> getNumbers() {
 		return numbers;
 	}
 
-	public void setNumbers(Integer[] numbers) {
+	public void setNumbers(List<Integer> numbers) {
 		this.numbers = numbers;
 	}
 
