@@ -20,6 +20,7 @@ function Left(){
             </>
         )
       });
+      aqui eu tenho que fazer tanta coisa que nem sei
         return(
             <div className="main-div">
                 <h6 className="my-title">Meus Jogos</h6>
