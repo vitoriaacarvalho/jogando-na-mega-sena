@@ -1,47 +1,42 @@
 import "./Left.css"
 import axios from 'axios';
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
-import React, {Component,useState, useEffect} from 'react';
 
-function Left(){
-
-    const[game,setGame]= React.useState([]);
-    React.useEffect(()=>{
-        axios.get("http://localhost:8080/games/game12").then((response)=>{
-        setGame(response.data);
-        });
-    }, []);
-    if (!game) return null;
-
-    const gameNumbers= game.map((game, index) => {
-        return(
-            <>
-                <p className="n1">{game(index)}</p>
-            </>
-        )
-      });
-      aqui eu tenho que fazer tanta coisa que nem sei
+class Left extends Component{
+    render(){
         return(
             <div className="main-div">
                 <h6 className="my-title">Meus Jogos</h6>
-                <main>
-                    {game.length ? (
-                        <div id="scroll">
-                            <div className="game">
-                                <p>
-                            
-                                </p>
-                            </div>
-                        </div>
-                    ): (
-                        <p style={{ marginTop: '2rem' }}>Your list is empty.</p>
-                    )
-                    }
-                    
-                </main>
-                
+                <div id="scroll">
+                    <div className="game">
+                        <p>
+                            02 03 47 35 12 23
+                        </p>
+                    </div>
+                    <div className="game">
+                        <p>
+                            02 03 47 35 12 23
+                        </p>
+                    </div>
+                    <div className="game">
+                        <p>
+                            02 03 47 35 12 23
+                        </p>
+                    </div>
+                    <div className="game">
+                        <p>
+                            02 03 47 35 12 23
+                        </p>
+                    </div>
+                    <div className="game">
+                        <p>
+                            02 03 47 35 12 23
+                        </p>
+                    </div>
+                </div>
             </div>
         );
-    
+    } 
 }
 export default Left;

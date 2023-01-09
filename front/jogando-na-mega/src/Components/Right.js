@@ -5,26 +5,22 @@ import axios from 'axios';
 function Right(){
 
     const[game,setGame]= React.useState([]);
-    
+    var[myGameNumbers, setMyGameNumbers]=React.useState([]);
+
     React.useEffect(()=>{
-            axios.get("http://localhost:8080/games/game12").then((response)=>{
-            setGame(response.data);
-            });
-    }, []);
-    if (!game) return null;
-    
-    window.onload=function(){
-        let button = document.getElementById("button");
-        button.addEventListener('click', ()=>{
-            game.map((game, index) => {
-                return(
-                    <>
-                        <p className="n1">{game}</p>
-                    </>
-                )
-            });
-        })
+        axios.get("http://localhost:8080/games/game12").then((response)=>{
+         setGame(response.data);
+        });
+      }, []);
+      if (!game) return null;
+
+    function mappingNumbers(){
+        game.map((game) => (
+            setMyGameNumbers==game
+        ));
+        if(!myGameNumbers) return null; else console.log(myGameNumbers);
     }
+  
 
     return(
         <div className="box">
@@ -35,7 +31,7 @@ function Right(){
             <a href="#" className="bttn-2"> 
                 <p className="bttn-2-p">Adicionar jogo</p>
             </a>
-            <a href="#" className="button" id="button" >
+            <a href="#" className="button" onClick={mappingNumbers()}>
                 <p className="bttn-p" >GERAR NÚMEROS</p>
             </a>
             
