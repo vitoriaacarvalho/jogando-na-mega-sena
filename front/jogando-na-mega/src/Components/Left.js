@@ -9,30 +9,32 @@ class Left extends Component{
             <div className="main-div">
                 <h6 className="my-title">Meus Jogos</h6>
                 <div id="scroll">
-                    <div className="game">
-                        <p>
-                            02 03 47 35 12 23
-                        </p>
-                    </div>
-                    <div className="game">
-                        <p>
-                            02 03 47 35 12 23
-                        </p>
-                    </div>
-                    <div className="game">
-                        <p>
-                            02 03 47 35 12 23
-                        </p>
-                    </div>
-                    <div className="game">
-                        <p>
-                            02 03 47 35 12 23
-                        </p>
-                    </div>
-                    <div className="game">
-                        <p>
-                            02 03 47 35 12 23
-                        </p>
+                    <div className="scroll-box">
+                        <div className="game">
+                            <p>
+                                02 03 47 35 12 23
+                            </p>
+                        </div>
+                        <div className="game">
+                            <p>
+                                02 03 47 35 12 23
+                            </p>
+                        </div>
+                        <div className="game">
+                            <p>
+                                02 03 47 35 12 23
+                            </p>
+                        </div>
+                        <div className="game">
+                            <p>
+                                02 03 47 35 12 23
+                            </p>
+                        </div>
+                        <div className="game">
+                            <p>
+                                02 03 47 35 12 23
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

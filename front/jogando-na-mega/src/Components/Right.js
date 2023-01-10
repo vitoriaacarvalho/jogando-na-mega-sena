@@ -12,27 +12,26 @@ function Right(){
          setGame(response.data);
         });
       }, []);
-      if (!game) return null;
+    if (!game) return null;
 
     function mappingNumbers(){
-        game.map((game) => (
-            setMyGameNumbers==game
-        ));
-        if(!myGameNumbers) return null; else console.log(myGameNumbers);
+        game.map((game,index) => {
+            setMyGameNumbers(game);
+        });
+        console.log(myGameNumbers);
     }
-  
 
     return(
         <div className="box">
             <h6 className="title">Sortear um Jogo</h6>
             <div className="numbers-container">
-                
+                <p className="n1">{myGameNumbers}</p>
             </div>  
             <a href="#" className="bttn-2"> 
                 <p className="bttn-2-p">Adicionar jogo</p>
             </a>
-            <a href="#" className="button" onClick={mappingNumbers()}>
-                <p className="bttn-p" >GERAR NÚMEROS</p>
+            <a href="#" className="button" >
+                <p className="bttn-p" onClick={() => mappingNumbers()}>GERAR NÚMEROS</p>
             </a>
             
         </div>
