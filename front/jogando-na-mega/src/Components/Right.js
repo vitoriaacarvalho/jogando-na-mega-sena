@@ -15,8 +15,8 @@ function Right(){
     if (!game) return null;
 
     function mappingNumbers(){
-        game.map((game,index) => {
-            setMyGameNumbers(game);
+        game.map((game) => {
+            setMyGameNumbers=[...myGameNumbers, game];
         });
         console.log(myGameNumbers);
     }
@@ -32,7 +32,7 @@ function Right(){
             </a>
             <a href="#" className="button" >
                 <p className="bttn-p" onClick={() => mappingNumbers()}>GERAR NÚMEROS</p>
-            </a>
+           </a>
             
         </div>
     );
