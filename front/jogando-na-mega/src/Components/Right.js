@@ -5,7 +5,7 @@ import axios from 'axios';
 function Right(){
 
     const[game,setGame]= React.useState([]);
-    var[myGameNumbers, setMyGameNumbers]=React.useState([]);
+    const[isShowingNumbers, setIsShowingNumbers]=React.useState(false);
 
     React.useEffect(()=>{
         axios.get("http://localhost:8080/games/game12").then((response)=>{
@@ -15,17 +15,21 @@ function Right(){
     if (!game) return null;
 
     function mappingNumbers(){
-        game.map((game) => {
-            setMyGameNumbers=[...myGameNumbers, game];
+        axios.get("http://localhost:8080/games/game12").then((response)=>{
+            setGame(response.data);
         });
-        console.log(myGameNumbers);
+        setIsShowingNumbers(true); 
     }
 
     return(
         <div className="box">
             <h6 className="title">Sortear um Jogo</h6>
             <div className="numbers-container">
-                <p className="n1">{myGameNumbers}</p>
+                {game.map((game) => {
+                    return(
+                        <p className="n1">{isShowingNumbers && game}</p>
+                    );
+                })}
             </div>  
             <a href="#" className="bttn-2"> 
                 <p className="bttn-2-p">Adicionar jogo</p>

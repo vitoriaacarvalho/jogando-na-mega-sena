@@ -24,12 +24,13 @@ aside{
     height: 100px;
     align-items: center;
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     margin: auto;
     margin-top: -25px;
     margin-left: 100px;
     box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.041);
 }
+
 #scroll {
     overflow-y: scroll;
     height: 300px;  
