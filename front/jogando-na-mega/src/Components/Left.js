@@ -12,6 +12,7 @@ function Left (){
         });
       }, []);
     if (!games) return null;
+    
     console.log(games);
         return(
             <div className="main-div">

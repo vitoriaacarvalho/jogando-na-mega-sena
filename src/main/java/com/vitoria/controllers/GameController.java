@@ -64,7 +64,7 @@ public class GameController {
 	}
 	
 	
-	@DeleteMapping("/deleteAll")
+	@DeleteMapping("/deletatudo")
 	public ResponseEntity<Void> deletingAll(){
 		repo.deleteAll();
 		return ResponseEntity.noContent().build();
