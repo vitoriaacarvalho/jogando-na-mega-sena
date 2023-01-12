@@ -12,7 +12,7 @@ aside{
     font-size: 33px;
     margin-top: 20px;
     margin-right: -95px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     justify-content: center;
     display: flex;
     flex-direction:row;
@@ -55,17 +55,63 @@ aside{
   border: 3px solid rgba(38, 44, 41, 0.082);  /* creates padding around scroll thumb */
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1270px) {
   #scroll{
     overflow-y: auto;
     overflow-x: scroll;
-    height: 300px;  
-    width: 25vw; 
+    height: 290px;  
+    width: 19vw; 
     border-radius: 20px;
-    box-sizing: 30px; 
+    box-sizing: 20px; 
+    margin: auto;
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    box-sizing: 20px; 
   }
   ::-webkit-scrollbar {
-    width: 12px; 
-                 
+    width: 4px;            
+  }
+  .my-title{
+    font-size: 31px;
+    margin-right: -250px;
+    margin-bottom: 35px;
+}
+}
+@media (max-width: 1150px) {
+  #scroll{
+    overflow-y: auto;
+    overflow-x: scroll;
+    height: 270px;  
+    width: 20vw; 
+    border-radius: 20px;
+    margin: auto;
+    margin-left: 40%;
+    display: flex;
+    justify-content: center;
+    box-sizing: 20px; 
+    
+  }
+  ::-webkit-scrollbar {
+    width: 12px;              
+  }
+  .my-title{
+    font-size: 30px;
+    margin-right: -160px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 1000px) {
+  #scroll{
+    overflow-y: auto;
+    overflow-x: scroll;
+    height: 270px;  
+    width: 18vw; 
+    border-radius: 20px;
+    box-sizing: 20px; 
+    margin-left: 140px;
+  }
+  ::-webkit-scrollbar {
+    width: 4px; 
   }
 }
